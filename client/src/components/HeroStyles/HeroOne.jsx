@@ -12,7 +12,7 @@ const HeroOne = () => {
 
       {/* Centered content */}
       <div className="absolute left-[35%] z-3 flex center h-full w-[25%] items-center justify-center">
-        <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 text-6xl font-fugaz text-white text-center transform -skew-y-21">
+        <h1 className="z-5 absolute animate-typing overflow-hidden whitespace-nowrap border-r-4 text-6xl font-fugaz text-white text-center transform -skew-y-21">
           Your website here.
         </h1>
       </div>

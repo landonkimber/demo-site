@@ -24,21 +24,28 @@ module.exports = {
                         borderColor: "white"
                     }
                 }
+
+            },
+            backgroundImage: {
+                'reverse-vignette':
+                    'radial-gradient(circle at center, rgba(255, 0, 0, 1) 0%, rgba(0, 4, 255, 1) 100%)',
             },
             skew: {
                 '15': '15deg',
                 '21': '21deg',
             },
+
             fontFamily: {
                 fugaz: ["Fugaz One", "sans-serif"],
                 zain: ["Zain", "sans-serif"],
                 limelight: ["Limelight", "sans-serif"],
                 audiowide: ["Audiowide", "sans-serif"],
+                domine: ["Domine", "sans-serif"],
             },
             animation: {
-                typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
+                typing: "typing 4s steps(25) alternate, blink .8s infinite"
             }
         },
     },
-    plugins: [],
+    plugins: [require('tailwindcss-filters')],
 };

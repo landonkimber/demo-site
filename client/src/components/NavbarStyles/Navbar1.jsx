@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Home, User, MessageSquare, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "../SVGs/Logo.jsx";
-
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -11,44 +10,50 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full flex justify-center content-center bg-gradient-to-br from-teal-400 to-teal-500 h-32 shadow-md select-none z-10">
-      <div className="container max-w-7xl mx-auto px-4 h-full">
-        <div className=" flex justify-between h-full">
+    <nav className="fixed top-0 w-full flex justify-center content-center bg-gradient-to-br from-slate-700 to-sky-950 h-32 shadow-md select-none z-10">
+      <div className="container max-w-5xl mx-auto px-4 h-full">
+        <div className=" flex justify-between h-full items-center">
           {/* Logo and Title */}
-          <a href="#home" className="flex items-center gap-3">
-            <div className="w-20 h-20 mb-4 items-center flex justify-center">
+          <a href="#home" className="flex items-center gap-1">
+            {/* <img
+              src={Logo}
+              className="w-20 h-20 items-center flex justify-center text-white"
+            ></img> */}
+
+            <div className="w-20 h-20 items-center flex justify-center hover:text-emerald-200">
               <Logo />
             </div>
-            <h1 className="text-2xl md:text-4xl lg:text-5xl text-white font-martel font-semibold">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl text-white font-domine font-bold  hover:text-emerald-200 ">
               Demo Site Name Inc.
             </h1>
           </a>
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="lg:hidden text-white hover:text-teal-700 mr-8"
+            className="lg:hidden text-white hover:text-emerald-200 mr-8"
           >
             {isMenuOpen ? <X size={40} /> : <Menu size={40} />}
           </button>
+          <div className="w-1 h-[50%] align-center flex justify-center bg-white hover:bg-emerald-200"></div>
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-8">
             <a
               href="#home"
-              className="flex flex-col items-center text-white hover:text-teal-700 transition-colors"
+              className="flex flex-col items-center text-white hover:text-emerald-200 transition-colors"
             >
               <Home size={36} />
               <span className="text-lg font-bold">Home</span>
             </a>
             <a
               href="#about"
-              className="flex flex-col items-center text-white hover:text-teal-700 transition-colors"
+              className="flex flex-col items-center text-white  hover:text-emerald-200 transition-colors"
             >
               <User size={36} />
               <span className="text-lg font-bold">About</span>
             </a>
             <a
               href="#contact"
-              className="flex flex-col items-center text-white hover:text-teal-700 transition-colors"
+              className="flex flex-col items-center text-white hover:text-emerald-200 transition-colors"
             >
               <MessageSquare size={36} />
               <span className="text-lg font-bold">Contact</span>

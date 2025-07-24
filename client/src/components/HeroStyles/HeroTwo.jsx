@@ -14,7 +14,7 @@ const HeroTwo = () => {
 
       {/* Centered content */}
       <div className="relative z-10 flex h-full w-full items-center ">
-        <h1 className="text-6xl text-right w-[45%] font-zain italic text-white bg-gradient-to-l from-red-600/60 to-transparent text-center px-4 py-2 rounded-sm -skew-x-10">
+        <h1 className="text-6xl text-right w-[45%] font-zain italic text-white bg-gradient-to-l from-red-600/60 to-transparent text-center px-4 py-2 rounded-sm -skew-x-10 ">
           With enough help...
         </h1>
       </div>
