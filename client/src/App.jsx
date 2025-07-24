@@ -1,17 +1,44 @@
-import React from "react";
 import "./App.css";
 import "./index.css";
-import { Route, Routes } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Page2 from "./pages/Page2";
+import NavbarHolder from "./components/NavbarHolder";
+import ComponentSlide from "./components/ComponentSlide";
+import ComponentHeroSlide from "./components/ComponentHeroSlide";
+
+import {
+  PassageOne,
+  PassageTwo,
+  PassageThree,
+  PassageFour,
+} from "./components/PassageStyles/index";
+import {
+  HeroOne,
+  HeroTwo,
+  HeroThree,
+  HeroFour,
+} from "./components/HeroStyles/index";
 
 function App() {
+  const PassageComponentList = {
+    PassageOne,
+    PassageTwo,
+    PassageThree,
+    PassageFour,
+  };
+  const HeroComponentList = {
+    HeroOne,
+    HeroTwo,
+    HeroThree,
+    HeroFour,
+  };
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/page2" element={<Page2 />} />
-    </Routes>
+    <>
+      <NavbarHolder />
+      <main className="bg-gray-50 min-h-screen pt-32 scroll-mt-32">
+        <ComponentHeroSlide components={HeroComponentList} />
+        <ComponentSlide components={PassageComponentList} />
+      </main>
+    </>
   );
 }
 
