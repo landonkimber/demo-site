@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-const ComponentSlide = ({ components }) => {
+const ComponentSlide = ({ components, componentWidth = "max-w-6xl" }) => {
   const keys = Object.keys(components);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -16,10 +16,12 @@ const ComponentSlide = ({ components }) => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto flex items-center justify-between gap-4 px-4">
+    <div
+      className={`${componentWidth} mx-auto flex items-center justify-between`}
+    >
       <button
         onClick={goPrev}
-        className="p-2 rounded-full bg-gray-200 hover:bg-gray-300"
+        className="absolute left-8 p-2 rounded-full bg-gray-200 bg-opacity-50 hover:bg-gray-400 hover:text-white z-15"
         aria-label="Previous Component"
       >
         <ArrowLeft className="w-6 h-6" />
@@ -29,7 +31,7 @@ const ComponentSlide = ({ components }) => {
 
       <button
         onClick={goNext}
-        className="p-2 rounded-full bg-gray-200 hover:bg-gray-300"
+        className="absolute right-8 p-2 rounded-full bg-gray-200 bg-opacity-50 hover:bg-gray-400 hover:text-white z-15"
         aria-label="Next Component"
       >
         <ArrowRight className="w-6 h-6" />

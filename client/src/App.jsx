@@ -17,6 +17,7 @@ import {
   HeroThree,
   HeroFour,
 } from "./components/HeroStyles/index";
+import { HeroTranOne, HeroTranTwo } from "./components/HeroTran/index";
 
 function App() {
   const PassageComponentList = {
@@ -31,11 +32,21 @@ function App() {
     HeroThree,
     HeroFour,
   };
+  const HeroTransistionList = {
+    HeroTranOne,
+    HeroTranTwo,
+  };
   return (
     <>
       <NavbarHolder />
-      <main className="bg-gray-50 min-h-screen pt-32 scroll-mt-32">
+      <main className="min-h-screen scroll-mt-32 bg-slate-100 bg-blend-overlay">
         <ComponentHeroSlide components={HeroComponentList} />
+        {/* <ComponentSlide
+          components={HeroTransistionList}
+          componentWidth={"w-full"}
+        /> */}
+        <ComponentSlide components={PassageComponentList} />
+        <ComponentSlide components={PassageComponentList} />
         <ComponentSlide components={PassageComponentList} />
       </main>
     </>

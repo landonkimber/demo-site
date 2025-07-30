@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Home, User, MessageSquare, Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
 import Logo from "../SVGs/Logo.jsx";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +9,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full flex justify-center content-center bg-gradient-to-br from-slate-700 to-sky-950 h-32 shadow-md select-none z-10">
+    <nav className="fixed top-0 w-full flex justify-center content-center bg-gradient-to-br from-slate-700 to-sky-950 bg-opacity-50 h-32 shadow-md select-none z-10">
       <div className="container max-w-5xl mx-auto px-4 h-full">
         <div className=" flex justify-between h-full items-center">
           {/* Logo and Title */}
@@ -21,7 +20,7 @@ const NavBar = () => {
             ></img> */}
 
             <div className="w-20 h-20 items-center flex justify-center hover:text-emerald-200">
-              <Logo />
+              <Logo hoverColor="hover:fill-emerald-600" />
             </div>
             <h1 className="text-2xl md:text-4xl lg:text-5xl text-white font-domine font-bold  hover:text-emerald-200 ">
               Demo Site Name Inc.

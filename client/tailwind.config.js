@@ -6,6 +6,9 @@ module.exports = {
     ],
     theme: {
         extend: {
+            backgroundSize: {
+                'half': '50% 50%',
+            },
             keyframes: {
                 typing: {
                     "0%": {
@@ -23,8 +26,11 @@ module.exports = {
                     "100%": {
                         borderColor: "white"
                     }
-                }
-
+                },
+                'slide-in-left': {
+                    '0%': { transform: 'translateX(-100%)', opacity: '0' },
+                    '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
             },
             backgroundImage: {
                 'reverse-vignette':
@@ -43,9 +49,9 @@ module.exports = {
                 domine: ["Domine", "sans-serif"],
             },
             animation: {
-                typing: "typing 4s steps(25) alternate, blink .8s infinite"
+                typing: "typing 4s steps(25) alternate, blink .8s infinite",
+                'slide-in-left': 'slide-in-left 0.6s ease-out forwards',
             }
         },
     },
-    plugins: [require('tailwindcss-filters')],
 };

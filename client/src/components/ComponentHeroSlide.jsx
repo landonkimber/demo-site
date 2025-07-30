@@ -16,7 +16,7 @@ const ComponentHeroSlide = ({ components }) => {
   };
 
   return (
-    <div className="w-[100vw] items-center justify-center">
+    <div className="w-[100vw] overflow-x-hidden">
       <div
         className="flex flex-row transition-transform duration-500 ease-in-out transform-gpu"
         style={{ transform: `translateX(-${currentIndex * 100}vw)` }}
@@ -24,7 +24,7 @@ const ComponentHeroSlide = ({ components }) => {
         {keys.map((k) => {
           const CurrentComponent = components[k];
           return (
-            <div key={k} className="w-screen h-[40vh] flex-none relative">
+            <div key={k} className="w-screen h-[70vh] flex-none relative">
               <CurrentComponent />
             </div>
           );
@@ -32,18 +32,18 @@ const ComponentHeroSlide = ({ components }) => {
       </div>
       <button
         onClick={goPrev}
-        className="absolute left-4 z-2 rounded-full bg-gray-200 hover:bg-gray-300"
+        className="absolute left-4 top-[40vh] z-2 rounded-full h-24 bg-gray-200 backdrop-blur bg-opacity-30 hover:bg-gray-200 hover:bg-opacity-70 shadow-white  hover:shadow-lg"
         aria-label="Previous Component"
       >
-        <ArrowLeft className="w-6 h-6" />
+        <ArrowLeft className="w-16 h-16 text-white" />
       </button>
 
       <button
         onClick={goNext}
-        className="absolute right-4 z-2 rounded-full bg-gray-200 hover:bg-gray-300"
+        className="absolute right-4 top-[40vh] z-2 rounded-full h-24 bg-gray-200 backdrop-blur bg-opacity-30 hover:bg-gray-200 hover:bg-opacity-70 shadow-white hover:shadow-lg"
         aria-label="Next Component"
       >
-        <ArrowRight className="w-6 h-6" />
+        <ArrowRight className="w-16 h-16 text-white" />
       </button>
     </div>
   );
