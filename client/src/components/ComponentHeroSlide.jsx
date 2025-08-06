@@ -16,7 +16,7 @@ const ComponentHeroSlide = ({ components }) => {
   };
 
   return (
-    <div className="w-[100vw] overflow-x-hidden">
+    <div className="fixed top-0 left-0 w-full h-[70vh] z-5 w-[100vw] overflow-x-hidden overflow-y-hidden z-5">
       <div
         className="flex flex-row transition-transform duration-500 ease-in-out transform-gpu"
         style={{ transform: `translateX(-${currentIndex * 100}vw)` }}
@@ -47,7 +47,6 @@ const ComponentHeroSlide = ({ components }) => {
       </button>
     </div>
   );
-  a;
 };
 
 export default ComponentHeroSlide;

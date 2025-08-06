@@ -10,13 +10,18 @@ const HeroFour = () => {
         alt="An image of a blue sky filled with fluffy white clouds."
         className="absolute h-full w-full object-cover object-[50%_40%] z-1"
       />
-      <div
-        className="absolute w-full h-full bg-sky-900 bg-opacity-20"
+      {/* <div
+        className="absolute w-full h-full bg-sky-300 bg-opacity-20"
         aria-hidden="true"
-      ></div>
+      ></div> */}
       {/* Centered content */}
       <div className="relative z-3 flex h-full w-full items-center justify-center">
-        <div className="font-limelight italic text-white text-center w-full h-full mt-[10vh]">
+        <div
+          className="font-limelight italic text-white font-bold text-center w-full h-full mt-[10vh]"
+          style={{
+            textShadow: "8px 8px 0 #000",
+          }}
+        >
           <svg
             className="w-1/2 h-[80%] mx-auto"
             viewBox="0 0 600 300"

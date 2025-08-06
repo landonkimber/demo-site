@@ -1,6 +1,26 @@
+import PassageImg from "/PassageImages/PassageOne.jpg";
+
 const PassageOne = () => {
+  const wordClass = "text-lime-300 font-fugaz text-lg mx-2";
+  const words = [
+    "BOLD",
+    "ICONIC",
+    "LIMITLESS",
+    "EXCLUSIVE",
+    "RADICAL",
+    "HOT",
+    "ELECTRIC",
+    "STYLISH",
+    "FRESH",
+    "NEW",
+    "UNDENIABLE",
+    "MODERN!",
+    "LEGENDARY",
+    "HIP",
+  ];
   return (
-    <div className="max-h-[400px] overflow-y-scroll border-4 border-teal-500 rounded-xl p-6 bg-gray-50 shadow-md">
+    <div className="min-h-900 p-6 rounded-sm bg-gray-50 bg-opacity-50 bg-blur-50">
+      <img src={PassageImg} alt="An image of a person's legs while running." />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate
         adipisci repellendus voluptatibus quos, corrupti beatae ad placeat

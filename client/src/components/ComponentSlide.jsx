@@ -17,11 +17,11 @@ const ComponentSlide = ({ components, componentWidth = "max-w-6xl" }) => {
 
   return (
     <div
-      className={`${componentWidth} mx-auto flex items-center justify-between`}
+      className={`relative ${componentWidth} mx-auto flex items-center justify-between`}
     >
       <button
         onClick={goPrev}
-        className="absolute left-8 p-2 rounded-full bg-gray-200 bg-opacity-50 hover:bg-gray-400 hover:text-white z-15"
+        className="absolute left-8 p-2 rounded-full bg-gray-200 bg-opacity-50 hover:bg-gray-400 hover:text-white z-10"
         aria-label="Previous Component"
       >
         <ArrowLeft className="w-6 h-6" />

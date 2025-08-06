@@ -17,7 +17,6 @@ import {
   HeroThree,
   HeroFour,
 } from "./components/HeroStyles/index";
-import { HeroTranOne, HeroTranTwo } from "./components/HeroTran/index";
 
 function App() {
   const PassageComponentList = {
@@ -32,24 +31,17 @@ function App() {
     HeroThree,
     HeroFour,
   };
-  const HeroTransistionList = {
-    HeroTranOne,
-    HeroTranTwo,
-  };
+
   return (
-    <>
+    <main className="relative">
+      <ComponentHeroSlide components={HeroComponentList} />
+
+      <div className="relative mt-[70vh] bg-[url(/blueprint.jpg)] bg-slate-100 bg-blend-overlay z-8">
+        <ComponentSlide components={PassageComponentList} />
+      </div>
+
       <NavbarHolder />
-      <main className="min-h-screen scroll-mt-32 bg-slate-100 bg-blend-overlay">
-        <ComponentHeroSlide components={HeroComponentList} />
-        {/* <ComponentSlide
-          components={HeroTransistionList}
-          componentWidth={"w-full"}
-        /> */}
-        <ComponentSlide components={PassageComponentList} />
-        <ComponentSlide components={PassageComponentList} />
-        <ComponentSlide components={PassageComponentList} />
-      </main>
-    </>
+    </main>
   );
 }
 
