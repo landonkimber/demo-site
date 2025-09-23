@@ -19,6 +19,9 @@ import {
 } from "./components/HeroStyles/index";
 
 function App() {
+  window.onload = function () {
+    window.scrollTo(0, 0);
+  };
   const PassageComponentList = {
     PassageOne,
     PassageTwo,
@@ -36,7 +39,7 @@ function App() {
     <main className="relative">
       <ComponentHeroSlide components={HeroComponentList} />
 
-      <div className="relative mt-[70vh] bg-[url(/blueprint.jpg)] bg-slate-100 bg-blend-overlay z-8">
+      <div className="relative mt-[70vh] scroll-mt-[70vh] bg-[url(/blueprint.jpg)] bg-slate-100 bg-blend-overlay z-8">
         <ComponentSlide components={PassageComponentList} />
       </div>
 

@@ -1,35 +1,42 @@
+import PassageImg from "/PassageImages/PassageOne.jpg";
+import PassageImgTwo from "/PassageImages/PassageOneTwo.jpg";
+
 const PassageThree = () => {
   return (
-    <div className="bg-gray-900 text-gray-100 p-8 rounded-lg shadow-lg border border-gray-700">
+    <div className="py-6 px-20 rounded-sm bg-gray-50 bg-opacity-50 bg-blur-50">
+      <img
+        src={PassageImgTwo}
+        alt="Image of a man running."
+        className="rounded-full h-fit w-auto"
+      />
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi mollitia
-        ex iure possimus aperiam. Nemo deleniti repellendus doloribus modi
-        fugiat quis perferendis sunt reiciendis eaque dolorem, quos asperiores
-        consectetur, alias corrupti saepe sequi eveniet! Ad debitis nostrum
-        ratione eius exercitationem. Dolorem sequi consequuntur quia deleniti
-        cupiditate iure repudiandae iste obcaecati mollitia minima eius, vero
-        libero. Natus, ipsum numquam. Ducimus aliquid consequuntur accusantium,
-        quae cumque quidem dolore facere, vel quam velit eligendi maxime
-        architecto nam libero impedit voluptate amet vero in dicta odit nemo?
-        Atque illo voluptate commodi! Amet ut, velit quaerat voluptate modi
-        doloribus ipsam officiis voluptatum labore sapiente tempora corrupti
-        architecto? A quia reprehenderit ex cum? Est provident reprehenderit
-        nostrum porro, dolores similique perferendis tenetur? Sint quas eius
-        adipisci perferendis modi libero tenetur. Sit consequatur nesciunt cum
-        adipisci repellat animi quaerat tempore vel libero ipsam soluta magnam,
-        eius, expedita totam dolorem optio consequuntur officiis suscipit quis
-        quibusdam explicabo corrupti dolor, quia ullam. Sint hic incidunt ad
-        ratione at vero quas minima eius, neque ducimus, consectetur mollitia
-        aliquid maxime nesciunt quo eligendi voluptatem animi architecto
-        laudantium quibusdam eveniet molestiae fugiat! Eligendi in voluptates
-        corporis, dolore excepturi aperiam at recusandae, quasi culpa numquam
-        error totam cumque dolores est molestias. Consequatur voluptas fugiat
-        modi non deserunt voluptatum cum magnam ullam, ea excepturi neque
-        delectus corrupti repellendus officiis, maxime obcaecati totam molestiae
-        hic incidunt odio nobis quos. Quidem sunt aliquid veniam iste
-        dignissimos delectus architecto nostrum perferendis impedit corporis non
-        aliquam voluptates inventore error quae sint, tenetur ducimus. Corrupti
-        sed perspiciatis molestiae modi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        nesciunt illum non, molestias quidem possimus laborum. Consectetur velit
+        qui ad esse quia molestiae animi amet ab aspernatur minima nulla vitae
+        accusamus, ullam in beatae ipsum iste omnis! Qui rem sint quidem
+        delectus, ex reprehenderit tenetur, tempora, beatae cumque repellat
+        deleniti dignissimos saepe temporibus eos! Facere soluta quos unde ullam
+        vel assumenda iure pariatur doloremque quia dolorum quibusdam animi
+        saepe optio qui ipsa, sed accusamus culpa perferendis obcaecati at
+        corporis tenetur reiciendis quo totam. Aliquam sapiente veniam commodi
+        numquam illo incidunt assumenda amet optio laboriosam? Vitae non, labore
+        nam ducimus deleniti molestiae quidem! Nisi totam sit blanditiis culpa
+        voluptates dolore commodi debitis quos nam neque explicabo, consectetur
+        tenetur. Quia voluptatum perspiciatis eos dolore. Nam necessitatibus
+        provident, reiciendis, vero animi error alias molestias beatae dolor
+        omnis optio quia voluptas ad dolorum impedit. Facilis molestiae rerum
+        quo cumque a debitis cupiditate odit, ab deserunt provident accusamus
+        architecto perferendis asperiores tempore et, aspernatur assumenda hic
+        quod voluptate rem blanditiis! Adipisci sequi officiis nam eligendi
+        molestias reprehenderit quos nobis, ad saepe? Officiis odit ipsum
+        minima, aperiam nihil cumque. Esse, facilis mollitia dicta voluptatem
+        libero repellat maxime sit. Modi ea corporis numquam! Sint, commodi at.
+        Itaque architecto est voluptatum quis modi magnam soluta dolorem, enim
+        sed maxime minima, nihil odio laborum veritatis suscipit voluptatem!
+        Voluptatem cum iusto ullam. Libero est a consequatur corporis quis
+        labore asperiores dignissimos rem voluptates. Debitis quisquam minus, id
+        facere libero ducimus similique cum quibusdam dignissimos sapiente
+        itaque aut laboriosam, laborum ea?
       </p>
     </div>
   );

@@ -42,11 +42,13 @@ module.exports = {
             },
 
             fontFamily: {
+                oswald: ["Oswald", "serif"],
                 fugaz: ["Fugaz One", "sans-serif"],
                 zain: ["Zain", "sans-serif"],
                 limelight: ["Limelight", "sans-serif"],
                 audiowide: ["Audiowide", "sans-serif"],
                 domine: ["Domine", "sans-serif"],
+                ranchers: ["Ranchers", "serif"],
             },
             animation: {
                 typing: "typing 4s steps(25) alternate, blink .8s infinite",

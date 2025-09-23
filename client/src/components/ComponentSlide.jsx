@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-const ComponentSlide = ({ components, componentWidth = "max-w-6xl" }) => {
+const ComponentSlide = ({ components, componentWidth = "max-w-7xl" }) => {
   const keys = Object.keys(components);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -21,7 +21,7 @@ const ComponentSlide = ({ components, componentWidth = "max-w-6xl" }) => {
     >
       <button
         onClick={goPrev}
-        className="absolute left-8 p-2 rounded-full bg-gray-200 bg-opacity-50 hover:bg-gray-400 hover:text-white z-10"
+        className="absolute left-8 top-64 p-2 rounded-full bg-gray-200 bg-opacity-50 hover:bg-gray-400 hover:text-white z-10"
         aria-label="Previous Component"
       >
         <ArrowLeft className="w-6 h-6" />
@@ -31,7 +31,7 @@ const ComponentSlide = ({ components, componentWidth = "max-w-6xl" }) => {
 
       <button
         onClick={goNext}
-        className="absolute right-8 p-2 rounded-full bg-gray-200 bg-opacity-50 hover:bg-gray-400 hover:text-white z-15"
+        className="absolute right-8 top-64 p-2 rounded-full bg-gray-200 bg-opacity-50 hover:bg-gray-400 hover:text-white z-15"
         aria-label="Next Component"
       >
         <ArrowRight className="w-6 h-6" />

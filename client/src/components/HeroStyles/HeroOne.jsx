@@ -1,7 +1,10 @@
 import heroImg from "/HeroImages/HeroOne.jpg";
 import { FaCheck } from "react-icons/fa";
+import { useState } from "react";
 
 const HeroOne = () => {
+  const [isHighlighted, setIsHighlighted] = useState(false);
+
   const wordClass = "text-lime-300 font-fugaz text-lg mx-2";
   const words = [
     "BOLD",
@@ -20,7 +23,7 @@ const HeroOne = () => {
     "HIP",
   ];
   const bulletStyle =
-    "w-2/3 text-4xl text-white font-bold font-sans bg-slate-800 bg-opacity-80 rounded-md m-5 p-2 pl-3 pb-3 flex items-center gap-2 opacity-0 -translate-x-full animate-slide-in-left";
+    "w-2/3 text-4xl text-white font-bold font-sans bg-slate-800 bg-opacity-80 rounded-md m-5 p-2 pl-3 pb-3 flex items-center gap-2 opacity-0 -translate-x-full animate-slide-in-left hover:text-lime-500";
 
   return (
     <section className="relative h-full w-full">
