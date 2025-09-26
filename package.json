@@ -1,7 +1,7 @@
 {
   "name": "demo-site",
   "version": "1.0.0",
-  "description": "This is a demo website made using React, Vite, and Tailwind CSS.",
+  "description": "This is a demo website made using React, Vite, and Tailwind CSS. The site was made to demonstate different webpage styles using React's component concept.",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js --ignore client",
@@ -16,7 +16,5 @@
   "devDependencies": {
     "concurrently": "^5.3.0"
   },
-  "dependencies": {
-    "dayjs": "^1.11.18"
-  }
+  "dependencies": {}
 }
