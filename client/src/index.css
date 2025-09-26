@@ -6,3 +6,72 @@
 .testColor {
   color: red;
 }
+.fugaz-one-regular {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.zain-extralight {
+  font-family: "Zain", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.zain-light {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zain-regular {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zain-bold {
+  font-family: "Zain", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.zain-extrabold {
+  font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.zain-black {
+  font-family: "Zain", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.zain-light-italic {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.zain-regular-italic {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.limelight-regular {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.domine-regular {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}

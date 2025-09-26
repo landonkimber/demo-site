@@ -1,17 +1,50 @@
-import React from "react";
 import "./App.css";
 import "./index.css";
-import { Route, Routes } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Page2 from "./pages/Page2";
+import NavbarHolder from "./components/NavbarHolder";
+import ComponentSlide from "./components/ComponentSlide";
+import ComponentHeroSlide from "./components/ComponentHeroSlide";
+
+import {
+  PassageOne,
+  PassageTwo,
+  PassageThree,
+  PassageFour,
+} from "./components/PassageStyles/index";
+import {
+  HeroOne,
+  HeroTwo,
+  HeroThree,
+  HeroFour,
+} from "./components/HeroStyles/index";
 
 function App() {
+  window.onload = function () {
+    window.scrollTo(0, 0);
+  };
+  const PassageComponentList = {
+    PassageOne,
+    PassageTwo,
+    PassageThree,
+    PassageFour,
+  };
+  const HeroComponentList = {
+    HeroOne,
+    HeroTwo,
+    HeroThree,
+    HeroFour,
+  };
+
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/page2" element={<Page2 />} />
-    </Routes>
+    <main className="relative">
+      <ComponentHeroSlide components={HeroComponentList} />
+
+      <div className="relative mt-[70vh] scroll-mt-[70vh] bg-[url(/blueprint.jpg)] bg-slate-100 bg-blend-overlay z-8">
+        <ComponentSlide components={PassageComponentList} />
+      </div>
+
+      <NavbarHolder />
+    </main>
   );
 }
 
