@@ -14,9 +14,6 @@ This is a demo website made using React, Vite, and Tailwind CSS. The site was ma
 
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Contributing](#-contributing)
 - [License](#-license)
 - [Contact](#-contact)
 - [Photo Credits](#-photo-credits)
@@ -40,12 +37,31 @@ This project was built using:
 - [📦 React Router](https://reactrouter.com/) – Client-side routing
 - [🎭 Lucide React](https://lucide.dev/) + [React Icons](https://react-icons.github.io/react-icons/) – Icon libraries
 
-## ⚙️ Installation
+## 📜 License
 
-Clone the repository and install dependencies:
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
-```bash
-git clone https://github.com/landonkimber/demo-site.git
-cd demo-site
-npm install
-```
+## 📞 Contact
+
+Created with ❤️ by **Landon Kimber**
+
+- 📧 Email: [landonkimber33@gmail.com](mailto:landonkimber33@gmail.com)
+- 💼 GitHub: [landonkimber](https://github.com/landonkimber)
+- 🌐 Portfolio: [landonkimber.com](https://landonkimber.com)
+
+---
+
+## 📸 Photo Credits
+
+This project uses images and icons from the following sources:
+
+- [Unsplash – Person trimming sports field](https://unsplash.com/photos/aerial-photography-of-person-trimming-sports-field-during-day-LlHgaeBwYVE)
+- [Unsplash – Grass field daytime](https://unsplash.com/photos/grass-field-at-daytime-PEm_sLmJT-w)
+- [Unsplash – Man with power tool](https://unsplash.com/photos/man-in-orange-and-black-vest-wearing-white-helmet-holding-yellow-and-black-power-tool-VLPUm5wP5Z0)
+- [Unsplash – People in kitchen](https://unsplash.com/photos/grayscale-photo-of-people-in-kitchen-pZrh59IkFwg)
+- [Unsplash – Black trike near Soter](https://unsplash.com/photos/black-trike-parked-near-soter-F6-U5fGAOik)
+- [SVG Repo – Avatar Icon](https://www.svgrepo.com/svg/446494/avatar)
+
+---
+
+⭐ If you found this project interesting, please consider giving it a star on GitHub!
